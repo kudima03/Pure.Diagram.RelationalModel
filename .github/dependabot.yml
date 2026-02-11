@@ -2,8 +2,8 @@ version: 2
 updates:
 - package-ecosystem: nuget
   directories:
-    - "src/"
-    - "src/Tests/"
+    - "src/Pure.Diagram.RelationalModel"
+    - "src/Tests/Pure.Diagram.RelationalModel.Tests"
   schedule:
     interval: daily
 - package-ecosystem: "github-actions"
