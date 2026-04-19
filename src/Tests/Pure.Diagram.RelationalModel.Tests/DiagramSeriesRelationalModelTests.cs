@@ -6,14 +6,14 @@ using Guid = Pure.Primitives.Guid.Guid;
 
 namespace Pure.Diagram.RelationalModel.Tests;
 
-public sealed record SeriesRelationalModelTests
+public sealed record DiagramSeriesRelationalModelTests
 {
     [Fact]
     public void InitializeIdCorrectly()
     {
         IGuid id = new Guid();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             id,
             new Guid(),
             new RandomString(),
@@ -28,7 +28,7 @@ public sealed record SeriesRelationalModelTests
     {
         IGuid id = new Guid();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             new Guid(),
             id,
             new RandomString(),
@@ -43,7 +43,7 @@ public sealed record SeriesRelationalModelTests
     {
         IString label = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             new Guid(),
             new Guid(),
             label,
@@ -58,7 +58,7 @@ public sealed record SeriesRelationalModelTests
     {
         IString source = new RandomString();
 
-        ISeriesRelationalModel model = new SeriesRelationalModel(
+        IDiagramSeriesRelationalModel model = new DiagramSeriesRelationalModel(
             new Guid(),
             new Guid(),
             new RandomString(),

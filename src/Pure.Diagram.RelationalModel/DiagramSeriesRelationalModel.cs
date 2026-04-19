@@ -4,9 +4,14 @@ using Pure.Primitives.Abstractions.String;
 
 namespace Pure.Diagram.RelationalModel;
 
-public sealed record SeriesRelationalModel : ISeriesRelationalModel
+public sealed record DiagramSeriesRelationalModel : IDiagramSeriesRelationalModel
 {
-    public SeriesRelationalModel(IGuid id, IGuid diagramId, IString label, IString source)
+    public DiagramSeriesRelationalModel(
+        IGuid id,
+        IGuid diagramId,
+        IString label,
+        IString source
+    )
     {
         Id = id;
         DiagramId = diagramId;
