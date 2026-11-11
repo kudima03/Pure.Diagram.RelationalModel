@@ -6,6 +6,16 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.1.0-preview.1.1.0] — 2026-11-11
+
+### Added
+- Support for `net11.0` alongside `net7.0`, `net8.0`, `net9.0`, and `net10.0`.
+
+### Changed
+- Updated `Pure.Diagram.RelationalModel.Abstractions` to `0.1.0-preview.2.1.0`
+  (the .NET 11 release).
+- NuGet package now includes the README and is published via trusted publishing.
+
 ## [0.1.0-preview.1.0.0] — 2026-04-19
 
 ### Changed
